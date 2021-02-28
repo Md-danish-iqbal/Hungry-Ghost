@@ -184,7 +184,8 @@ header{
 /*================================    Buttons       ===========================================*/
 /*============================================================================================*/
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -195,7 +196,8 @@ header{
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
   background-color: #bdc3c7;
   border: 1px solid #6d8c93;
   color: black;
@@ -203,19 +205,23 @@ header{
 }
 
 .btn:hover,
-.btn:active{
-    background-color : #6d8c93;
-
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+background-color : #6d8c93;
 color: white;
 }
 
 .btn-full:hover,
-.btn-full:active{
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active{
   border: 1px solid #6d8c93;
 }
 
 .btn-ghost{
   border: 1px solid #6d8c93;
+
 }
 .btn-app:link,
 .btn-app:visited{
@@ -409,4 +415,76 @@ cite img{
 
 /*============================================================================================*/
 /*================================  Signup Section       =======================================*/
+/*============================================================================================*/
+
+.section-plans{
+  background-color: #f4f4f4;
+
+}
+
+.plan-box{
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 5px #efefef;
+}
+
+.plan-box div{
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.plan-price{
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color:  #6d8c93;
+}
+.plan-price-meal{
+  font-size: 80%;
+}
+.plan-price span{
+  font-size: 30%;
+  font-weight: 300;
+
+}
+.plan-box ul {
+list-style: none;
+}
+.plan-box ul li{
+padding: 5px 0;
+}
+.plan-box div{
+  border-color: #fcfcfc;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.plan-box div:last-child{
+  text-align: center;
+  border: 0;
+}
+
+/*============================================================================================*/
+/*================================  form      =======================================*/
+/*============================================================================================*/
+
+.contact-form{
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,textarea{
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea{
+  height: 100px;
+}
+/*============================================================================================*/
+/*================================  footer  =======================================*/
 /*============================================================================================*/
